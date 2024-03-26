@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Converter</title>
+    <link rel="stylesheet" href="moneyConverterstyles.css">
+</head>
+<body>
+
+    <div class="moneyConvert">
+        <h2>Type your value</h2>
+        <input type="number" value="0" id="convertNumber" min="0">
+        <div>
+            <input type="radio" id="UAHtoGBR" name="convert-type">
+            <label for="UAHtoGBR">UAH -> GBR</label>
+        </div>
+        <div>
+            <input type="radio" id="GBRtoUAH" name="convert-type">
+            <label for="GBRtoUAH">GBR -> UAH</label>
+        </div>
+        <button onclick="convert()">Convert</button>
+        <label id="convertResult"></label>
+    </div>
+
+
+    <div class="generatePassword">
+        <button id="passwordGenerator">Generate a password</button>
+        <label id="labelPassword">Your password is: <span id="thePassword"></span></label>
+    </div> 
+
+    <script src="moneyConverter.js"></script>
+</body>
+</html>
